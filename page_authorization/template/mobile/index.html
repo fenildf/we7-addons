@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	 <meta name="format-detection" content="telephone=yes" />
+	<meta charset="UTF-8">
+	<title>网页授权</title>
+	{template 'common/header'}
+</head>
+<body>
+	<div>昵称：{php echo $res['nickname'];} </div> 
+	<div>性别：{php echo $res['sex'];}</div>
+	<div>国家：{php echo $res['country'];}</div>
+	<div>头像：<img src="{php echo $res['headimgurl'];}" style="width: 50px;height: 50px"></div>
+</body>
+</html>
+{template 'common/footer'}
